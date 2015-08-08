@@ -2,19 +2,14 @@
 
 bundle
 
-TARGET_NAME="CaliPhoneOnly"
-XC_PROJECT=".xcodeproj"
+TARGET_NAME="iPhoneOnly"
+XC_PROJECT="iPhoneOnly.xcodeproj"
 XC_SCHEME="${TARGET_NAME}"
-
-if [ ! -z "${1}" ]; then
-  CONFIG="${1}"
-else
-  CONFIG=Debug
-fi
 
 CAL_DISTRO_DIR="${PWD}/build/ipa"
 ARCHIVE_BUNDLE="${CAL_DISTRO_DIR}/${TARGET_NAME}.xcarchive"
 APP_BUNDLE_PATH="${ARCHIVE_BUNDLE}/Products/Applications/${TARGET_NAME}.app"
+CONFIG=Debug
 DYSM_PATH="${ARCHIVE_BUNDLE}/dSYMs/${TARGET_NAME}.app.dSYM"
 IPA_PATH="${CAL_DISTRO_DIR}/${TARGET_NAME}.ipa"
 
@@ -82,16 +77,19 @@ if [ $RETVAL != 0 ]; then
   exit $RETVAL
 fi
 
-if [ "${CONFIG}" = "Debug" ]; then
-  IPA="${TARGET_NAME}-Calabash-dylibs-embedded.ipa"
-  IPA_DSYM="${TARGET_NAME}-Calabash-dylibs-embedded.app.dSYM"
-else
-  IPA="${TARGET_NAME}-no-Calabash-dylibs-embedded.ipa"
-  IPA_DSYM="${TARGET_NAME}-no-Calabash-dylibs-embedded.app.dSYM"
+INSTALL_DIR=./Calabash-ipa
+if [ -d "${INSTALL_DIR}" ]; then
+  rm -rf "${INSTALL_DIR}"
 fi
 
-mv "${IPA_PATH}" "${PWD}/${IPA}"
-echo "Created ${PWD}/${IPA}"
+mkdir -p "${INSTALL_DIR}"
 
-mv "${DYSM_PATH}" "${PWD}/${IPA_DSYM}"
-echo "Created ${PWD}/${IPA_DSYM}"
+IPA="${TARGET_NAME}.ipa"
+DSYM="${TARGET_NAME}.app.dSYM"
+
+mv "${IPA_PATH}" "${INSTALL_DIR}/${IPA}"
+echo "INFO: installed ${INSTALL_DIR}/${IPA}"
+
+mv "${DYSM_PATH}" "${INSTALL_DIR}/${DSYM}"
+echo "INFO: installed ${INSTALL_DIR}/${DSYM}"
+

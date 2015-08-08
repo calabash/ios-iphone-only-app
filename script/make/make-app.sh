@@ -2,16 +2,12 @@
 
 bundle
 
-if [ ! -z "${1}" ]; then
-  CAL_BUILD_CONFIG="${1}"
-else
-  CAL_BUILD_CONFIG=Debug
-fi
-
-TARGET_NAME="CalSmoke"
-XC_PROJECT="ios-smoke-test-app.xcodeproj"
+TARGET_NAME="iPhoneOnly"
+XC_PROJECT="iPhoneOnly.xcodeproj"
 XC_SCHEME="${TARGET_NAME}"
 CAL_BUILD_DIR="${PWD}/build"
+CAL_BUILD_CONFIG=Debug
+
 rm -rf "${CAL_BUILD_DIR}"
 mkdir -p "${CAL_BUILD_DIR}"
 
@@ -55,17 +51,23 @@ else
   echo "INFO: Successfully built"
 fi
 
-
-APP_BUNDLE_PATH="${CAL_BUILD_DIR}/Build/Products/${CAL_BUILD_CONFIG}-iphonesimulator/${TARGET_NAME}.app"
-if [ "${CAL_BUILD_CONFIG}" = "Debug" ]; then
-  APP="${TARGET_NAME}-Calabash-dylibs-embedded.app"
-else
-  APP="${TARGET_NAME}-no-Calabash-dylibs-embedded.app"
+INSTALL_DIR=./Calabash-app
+if [ -d "${INSTALL_DIR}" ]; then
+  rm -rf "${INSTALL_DIR}"
 fi
 
-mv "${APP_BUNDLE_PATH}" "${PWD}/${APP}"
-echo "export APP=${PWD}/${APP}"
+mkdir -p "${INSTALL_DIR}"
 
-echo "INFO: Installing app on default simulator"
-bundle exec run-loop simctl install --app "${PWD}/${APP}"
+APP=${TARGET_NAME}.app
+DSYM=${TARGET_NAME}.app.dSYM
+
+PRODUCT_DIR="${CAL_BUILD_DIR}/Build/Products/${CAL_BUILD_CONFIG}-iphonesimulator"
+APP_BUNDLE_PATH="${PRODUCT_DIR}/${APP}"
+DSYM_BUNDLE="${PRODUCT_DIR}/${DSYM}"
+
+mv "${APP_BUNDLE_PATH}" "${INSTALL_DIR}/${APP}"
+echo "INFO: installed ${INSTALL_DIR}/${APP}"
+
+mv "${DSYM_BUNDLE}" "${INSTALL_DIR}/${DSYM}"
+echo "INFO: installed ${INSTALL_DIR}/${DSYM}"
 
