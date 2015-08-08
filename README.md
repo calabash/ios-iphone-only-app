@@ -14,5 +14,12 @@ $ bundle install
 $ make app
 ```
 
-App is installed to ./
+App is installed to ./Calabash-app
+
+If you need to make an .ipa, you might need to set the
+`CODE_SIGN_IDENTITY` if you have multiple Developer accounts.
+
+```
+$ CODE_SIGN_IDENTITY="iPhone Developer: Joshua Moody (8<snip>F)" make ipa
+```
 
