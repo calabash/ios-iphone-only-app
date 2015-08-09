@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,8 +17,161 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lQ9-pk-eEO" userLabel="Cayenne">
+                                <rect key="frame" x="16" y="20" width="44" height="44"/>
+                                <color key="backgroundColor" red="0.50196081399917603" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="Cayenne">
+                                    <accessibilityTraits key="traits" none="YES" button="YES"/>
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="RFw-Mg-3Q8"/>
+                                    <constraint firstAttribute="height" constant="44" id="vMo-Om-Quq"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lXi-mh-1u9" userLabel="Asparagus">
+                                <rect key="frame" x="278" y="20" width="44" height="44"/>
+                                <color key="backgroundColor" red="0.50196081399917603" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="Asparagus">
+                                    <accessibilityTraits key="traits" none="YES" button="YES"/>
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="UPe-Rb-7f4"/>
+                                    <constraint firstAttribute="width" constant="44" id="cRg-N3-8BC"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UUW-fn-x9d" userLabel="Clover">
+                                <rect key="frame" x="540" y="20" width="44" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="Clover">
+                                    <accessibilityTraits key="traits" none="YES" button="YES"/>
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="PdS-WX-SRD"/>
+                                    <constraint firstAttribute="width" constant="44" id="zqF-Qm-i1b"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JQD-12-hcK" userLabel="Midnight">
+                                <rect key="frame" x="16" y="278" width="44" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="Midnight">
+                                    <accessibilityTraits key="traits" none="YES" button="YES"/>
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="BqF-Kf-hKM"/>
+                                    <constraint firstAttribute="width" constant="44" id="oHl-r9-jlb"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfh-zB-00p" userLabel="Plum">
+                                <rect key="frame" x="278" y="278" width="44" height="44"/>
+                                <color key="backgroundColor" red="0.50196081399917603" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="Plum">
+                                    <accessibilityTraits key="traits" none="YES" button="YES"/>
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="9Ya-E5-wjb"/>
+                                    <constraint firstAttribute="height" constant="44" id="SYF-yJ-xrM"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RWw-71-T40" userLabel="Tin">
+                                <rect key="frame" x="540" y="278" width="44" height="44"/>
+                                <color key="backgroundColor" red="0.49803921580314636" green="0.49803921580314636" blue="0.49803921580314636" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="Tin">
+                                    <accessibilityTraits key="traits" none="YES" button="YES"/>
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="LFK-c3-qjy"/>
+                                    <constraint firstAttribute="width" constant="44" id="Vrf-Gr-Hyj"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RUI-uJ-o0f" userLabel="Mocha">
+                                <rect key="frame" x="16" y="556" width="44" height="44"/>
+                                <color key="backgroundColor" red="0.50196081399917603" green="0.25098040699958801" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="Mocha">
+                                    <accessibilityTraits key="traits" none="YES" button="YES"/>
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="LH7-AK-GcN"/>
+                                    <constraint firstAttribute="width" constant="44" id="gef-j3-ZCO"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hD3-PD-wya" userLabel="Fern">
+                                <rect key="frame" x="278" y="556" width="44" height="44"/>
+                                <color key="backgroundColor" red="0.25098040699958801" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="Fern">
+                                    <accessibilityTraits key="traits" none="YES" button="YES"/>
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Flc-Y8-gXY"/>
+                                    <constraint firstAttribute="width" constant="44" id="koD-Dv-YDl"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dqe-d7-B1k" userLabel="Moss">
+                                <rect key="frame" x="540" y="556" width="44" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.25098040699958801" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="Moss">
+                                    <accessibilityTraits key="traits" none="YES" button="YES"/>
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="YAt-Qa-mKR"/>
+                                    <constraint firstAttribute="width" constant="44" id="qQo-Wo-96s"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xr-sB-HJd">
+                                <rect key="frame" x="175" y="233" width="250" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="If3-WX-WeV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="hD3-PD-wya" secondAttribute="centerX" id="1cy-gt-8zx"/>
+                            <constraint firstItem="UUW-fn-x9d" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="2gD-23-w74"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="hD3-PD-wya" secondAttribute="bottom" id="8go-Mq-8cm"/>
+                            <constraint firstItem="dqe-d7-B1k" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="CKR-E9-uyF"/>
+                            <constraint firstItem="lQ9-pk-eEO" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Chf-IV-L6f"/>
+                            <constraint firstItem="RUI-uJ-o0f" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="K2d-t1-Nqr"/>
+                            <constraint firstItem="RWw-71-T40" firstAttribute="top" secondItem="0xr-sB-HJd" secondAttribute="bottom" constant="20" id="LVu-ZU-J0g"/>
+                            <constraint firstAttribute="centerX" secondItem="dfh-zB-00p" secondAttribute="centerX" id="PxY-sH-M9C"/>
+                            <constraint firstItem="lXi-mh-1u9" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="U6x-MA-VLt"/>
+                            <constraint firstItem="lQ9-pk-eEO" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="WQx-mm-DzT"/>
+                            <constraint firstAttribute="centerY" secondItem="RWw-71-T40" secondAttribute="centerY" id="ZOT-nu-WaK"/>
+                            <constraint firstAttribute="centerY" secondItem="dfh-zB-00p" secondAttribute="centerY" id="e2U-Ul-p1F"/>
+                            <constraint firstAttribute="centerX" secondItem="0xr-sB-HJd" secondAttribute="centerX" id="fF3-Eq-gcj"/>
+                            <constraint firstItem="UUW-fn-x9d" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="jHB-Tn-W6I"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="RUI-uJ-o0f" secondAttribute="bottom" id="jRE-hH-I2U"/>
+                            <constraint firstAttribute="centerY" secondItem="JQD-12-hcK" secondAttribute="centerY" id="l65-p7-dfr"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="dqe-d7-B1k" secondAttribute="bottom" id="l6U-nr-DLC"/>
+                            <constraint firstItem="JQD-12-hcK" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="lDz-gv-JfC"/>
+                            <constraint firstItem="RWw-71-T40" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="s6c-rc-9kF"/>
+                            <constraint firstAttribute="centerX" secondItem="lXi-mh-1u9" secondAttribute="centerX" id="wol-So-3cQ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="actionLabel" destination="0xr-sB-HJd" id="6Yh-OR-LIV"/>
+                        <outlet property="asparagus" destination="lXi-mh-1u9" id="Q8R-3N-ke0"/>
+                        <outlet property="cayenne" destination="lQ9-pk-eEO" id="XCU-CP-XHt"/>
+                        <outlet property="clover" destination="UUW-fn-x9d" id="rzl-WW-mX0"/>
+                        <outlet property="fern" destination="hD3-PD-wya" id="vMU-G8-K5y"/>
+                        <outlet property="midnight" destination="JQD-12-hcK" id="8hS-7e-9PZ"/>
+                        <outlet property="mocha" destination="RUI-uJ-o0f" id="Dvj-L1-D4G"/>
+                        <outlet property="moss" destination="dqe-d7-B1k" id="VMO-7q-4JF"/>
+                        <outlet property="plum" destination="dfh-zB-00p" id="XjO-o7-exx"/>
+                        <outlet property="tin" destination="RWw-71-T40" id="AMx-id-GZz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
