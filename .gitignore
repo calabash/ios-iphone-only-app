@@ -1,5 +1,8 @@
 # turds
 (.*/)?\#[^/]*\#$
+*~
+*.swp
+*.swo
 tags
 *.bak
 
@@ -51,4 +54,5 @@ xtc-staging
 ## Build products
 build/*
 */build/*
+xtc-submit
 

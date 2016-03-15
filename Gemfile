@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+gem "calabash-cucumber", ">= 0.18.2"
+gem "briar"
+
 # workflow and build tools
 gem 'rake', '~> 10.3'
 gem 'bundler', '~> 1.6'
