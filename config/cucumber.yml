@@ -28,10 +28,10 @@ end
 
 if ENV["USER"] == "jenkins"
   formatter = "pretty"
-  no_stop = 1
+  no_stop = "0"
 else
   formatter = "Slowhandcuke::Formatter"
-  no_stop = 0
+  no_stop = "1"
 end
 
 %>

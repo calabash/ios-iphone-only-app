@@ -104,6 +104,19 @@ GEM
       netrc (~> 0.7)
     retriable (2.0.2)
     rouge (1.10.1)
+    rspec (3.4.0)
+      rspec-core (~> 3.4.0)
+      rspec-expectations (~> 3.4.0)
+      rspec-mocks (~> 3.4.0)
+    rspec-core (3.4.4)
+      rspec-support (~> 3.4.0)
+    rspec-expectations (3.4.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.4.0)
+    rspec-mocks (3.4.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.4.0)
+    rspec-support (3.4.1)
     rubyzip (1.2.0)
     run_loop (2.0.9)
       CFPropertyList (~> 2.2)
@@ -159,6 +172,7 @@ DEPENDENCIES
   pry
   pry-nav
   rake (~> 10.3)
+  rspec (~> 3.0)
   travis (~> 1.7)
   xcpretty (~> 0.1)
 

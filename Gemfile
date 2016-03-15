@@ -7,6 +7,7 @@ gem "briar"
 gem 'rake', '~> 10.3'
 gem 'bundler', '~> 1.6'
 gem 'xcpretty', '~> 0.1'
+gem "rspec", "~> 3.0"
 
 # pry
 gem 'pry'
