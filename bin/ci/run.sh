@@ -4,5 +4,5 @@ bundle update
 bin/ci/make-framework.sh
 bin/ci/make-ipa.sh
 bundle exec bin/test/test-cloud.rb
-bin/test/simulator.sh
+bin/test/simulators.sh
 
