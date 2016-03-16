@@ -1,6 +1,6 @@
 <%
 
-require 'luffa'
+require "run_loop"
 
 if ENV["APP_BUNDLE_PATH"]
   Luffa.log_warn("APP_BUNDLE_PATH is deprecated; use APP instead")
@@ -34,6 +34,23 @@ else
   no_stop = "1"
 end
 
+xcode = RunLoop::Xcode.new
+xcode_version = xcode.version
+sim_major = xcode_version.major + 2
+sim_minor = xcode_version.minor
+
+sim_version = "(#{sim_major}.#{sim_minor})"
+
+iphone6 = RunLoop::Device.device_with_identifier("iPhone 6s #{sim_version}").udid
+iphone6_plus = RunLoop::Device.device_with_identifier("iPhone 6s Plus #{sim_version}").udid
+iphone5 = RunLoop::Device.device_with_identifier("iPhone 5s #{sim_version}").udid
+
+iphone6_report = "reports/iphone6.json"
+iphone6_plus_report = "reports/iphone6-plus.json"
+iphone5_report = "reports/iphone5.json"
+
+FileUtils.mkdir_p("./reports")
+
 %>
 
 verbose: DEBUG=1
@@ -42,7 +59,14 @@ formatter: -f <%= formatter %> NO_STOP=<%= no_stop %>
 # Launch on default simulator.
 simulator_vars: APP=<%= APP %>
 simulator_tags: --tags ~@device_only --tags ~@device
-default:        -p simulator_vars -p simulator_tags -p formatter
+
+sim_six:              DEVICE_TARGET=<%= iphone6 %> -f json -o <%= iphone6_report %>
+sim_six_plus:         DEVICE_TARGET=<%= iphone6_plus %> -f json -o <%= iphone6_plus_report %>
+sim_five:             DEVICE_TARGET=<%= iphone5 %> -f json -o <%= iphone5_report %>
+
+default:              -p simulator_vars -p simulator_tags -p formatter -p sim_six
+simulator_six_plus:   -p simulator_vars -p simulator_tags -p formatter -p sim_six_plus
+simulator_five:       -p simulator_vars -p simulator_tags -p formatter -p sim_five
 
 # Launch on device.
 device_tags:  --tags ~@simulator_only --tags ~@simulator

@@ -13,7 +13,17 @@
 @property (weak, nonatomic) IBOutlet UIView *fern;
 @property (weak, nonatomic) IBOutlet UIView *moss;
 
+@property (weak, nonatomic) IBOutlet UIButton *topLeftButton;
+@property (weak, nonatomic) IBOutlet UIButton *topMiddleButton;
+@property (weak, nonatomic) IBOutlet UIButton *topRightButton;
+@property (weak, nonatomic) IBOutlet UIButton *middleLeftButton;
+@property (weak, nonatomic) IBOutlet UIButton *bottomLeftButton;
+@property (weak, nonatomic) IBOutlet UIButton *bottomMiddleButton;
+@property (weak, nonatomic) IBOutlet UIButton *bottomRightButton;
+@property (weak, nonatomic) IBOutlet UIButton *middleRightButton;
+
 - (void) handleTapOnBox:(UIGestureRecognizer *) recognizer;
+- (IBAction)smallButtonTouched:(UIButton *)sender;
 
 @end
 
@@ -62,4 +72,11 @@
     self.actionLabel.text = view.accessibilityLabel;
   }
 }
+
+- (IBAction)smallButtonTouched:(UIButton *)sender {
+  NSLog(@"accessibility activation point: %@",
+        NSStringFromCGPoint(sender.accessibilityActivationPoint));
+  self.actionLabel.text = sender.accessibilityIdentifier;
+}
+
 @end

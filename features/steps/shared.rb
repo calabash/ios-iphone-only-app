@@ -26,6 +26,12 @@ module IPhoneOnly
     touch(qstr)
   end
 
+  def touch_small_button(y_id, x_id)
+    mark = "#{y_id} #{x_id}"
+    qstr = wait_for_view(mark)
+    touch(qstr)
+  end
+
   def wait_for_text_in_action_label(text)
     qstr = wait_for_view("action")
     actual = query(qstr, :text).first
@@ -45,5 +51,11 @@ When(/^I touch the "([^\"]*)" box, the text appears$/) do |text|
   clear_action_label
   touch_box(text)
   wait_for_text_in_action_label(text)
+end
+
+When(/^I touch the (top|middle|bottom) (left|middle|right) button, the action text is correct$/) do |y_id, x_id|
+  clear_action_label
+  touch_small_button(y_id, x_id)
+  wait_for_text_in_action_label("#{y_id} #{x_id}")
 end
 
