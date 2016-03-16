@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-bundle update
 make app
 rm -f reports/*json
 
