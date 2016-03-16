@@ -6,7 +6,7 @@ World(Calabash::Cucumber::Operations)
 
 require "rspec"
 
-if RunLoop::Environment.xtc?
+if !RunLoop::Environment.xtc?
   require "pry"
   Pry.config.history.file = '.pry-history'
   require 'pry-nav'
