@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem "calabash-cucumber", ">= 0.18.2"
+gem "calabash-cucumber", "0.19.0"
 gem "briar", "~> 2.0"
 gem "xamarin-test-cloud", "2.0.0.pre4"
 
