@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem "calabash-cucumber", ">= 0.18.2"
 gem "briar", "~> 2.0"
-gem "xamarin-test-cloud", "2.0.0.pre2"
+gem "xamarin-test-cloud", "2.0.0.pre4"
 
 # workflow and build tools
 gem 'rake', '~> 10.3'
