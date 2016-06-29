@@ -12,6 +12,7 @@
 		F52252D41B76670E004235EF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52252D31B76670E004235EF /* ViewController.m */; };
 		F52252D71B76670E004235EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52252D51B76670E004235EF /* Main.storyboard */; };
 		F52252D91B76670E004235EF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F52252D81B76670E004235EF /* Images.xcassets */; };
+		F5C33B211D23BCF300E746DD /* MBFingerTipWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C33B201D23BCF300E746DD /* MBFingerTipWindow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		F52252D31B76670E004235EF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F52252D61B76670E004235EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F52252D81B76670E004235EF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F5C33B1F1D23BCF300E746DD /* MBFingerTipWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBFingerTipWindow.h; sourceTree = "<group>"; };
+		F5C33B201D23BCF300E746DD /* MBFingerTipWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBFingerTipWindow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,8 @@
 		F52252CA1B76670E004235EF /* iPhoneOnly */ = {
 			isa = PBXGroup;
 			children = (
+				F5C33B1F1D23BCF300E746DD /* MBFingerTipWindow.h */,
+				F5C33B201D23BCF300E746DD /* MBFingerTipWindow.m */,
 				F52252CF1B76670E004235EF /* AppDelegate.h */,
 				F52252D01B76670E004235EF /* AppDelegate.m */,
 				F52252D21B76670E004235EF /* ViewController.h */,
@@ -165,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F52252D41B76670E004235EF /* ViewController.m in Sources */,
+				F5C33B211D23BCF300E746DD /* MBFingerTipWindow.m in Sources */,
 				F52252D11B76670E004235EF /* AppDelegate.m in Sources */,
 				F52252CE1B76670E004235EF /* main.m in Sources */,
 			);
