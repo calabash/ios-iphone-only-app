@@ -41,5 +41,3 @@ When I touch the bottom left button, the action text is correct
 When I touch the bottom middle button, the action text is correct
 When I touch the bottom right button, the action text is correct
 
-
-
