@@ -25,6 +25,7 @@ __MACOSX
 # ruby/calabash/cucumber
 .irb-history
 .irbrc-*
+.pry-history
 .bundle
 *.gem
 reports
