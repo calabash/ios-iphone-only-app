@@ -11,11 +11,8 @@ gem 'bundler', '~> 1.6'
 gem 'xcpretty', '~> 0.1'
 gem "rspec", "~> 3.0"
 gem "cucumber", "~> 2.0"
+gem 'luffa', '~> 1.0', '>= 1.0.2'
 
 # pry
 gem 'pry'
 gem 'pry-nav'
-
-# CI Stack
-gem 'travis', '~> 1.7'
-gem 'luffa', '~> 1.0', '>= 1.0.2'
