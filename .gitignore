@@ -57,4 +57,5 @@ xtc-staging
 build/*
 */build/*
 xtc-submit
+.xtc
 
