@@ -58,4 +58,5 @@ build/*
 */build/*
 xtc-submit
 .xtc
+bin/test/xtc.sh
 
