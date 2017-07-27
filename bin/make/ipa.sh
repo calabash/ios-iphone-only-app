@@ -1,33 +1,12 @@
 #!/usr/bin/env bash
 
-function info {
-  echo "$(tput setaf 2)INFO: $1$(tput sgr0)"
-}
+source bin/log.sh
+source bin/ditto.sh
+source bin/simctl.sh
 
-function error {
-  echo "$(tput setaf 1)ERROR: $1$(tput sgr0)"
-}
+ensure_valid_core_sim_service
 
-function banner {
-  echo ""
-  echo "$(tput setaf 5)######## $1 #######$(tput sgr0)"
-  echo ""
-}
-
-function ditto_or_exit {
-  ditto "${1}" "${2}"
-  if [ "$?" != 0 ]; then
-    error "Could not copy:"
-    error "  source: ${1}"
-    error "  target: ${2}"
-    if [ ! -e "${1}" ]; then
-      error "The source file does not exist"
-      error "Did a previous xcodebuild step fail?"
-    fi
-    error "Exiting 1"
-    exit 1
-  fi
-}
+set -e
 
 banner "Preparing"
 
@@ -121,9 +100,7 @@ mkdir -p "${PAYLOAD_DIR}"
 
 ditto_or_exit "${INSTALLED_APP}" "${PAYLOAD_DIR}/${APP}"
 
-xcrun ditto -ck --rsrc --sequesterRsrc --keepParent \
-  "${PAYLOAD_DIR}" \
-  "${INSTALLED_IPA}"
+ditto_to_zip "${PAYLOAD_DIR}" "${INSTALLED_IPA}"
 
 info "Installed ${INSTALLED_IPA}"
 
