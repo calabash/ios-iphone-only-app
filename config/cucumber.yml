@@ -41,12 +41,12 @@ sim_minor = xcode_version.minor
 
 sim_version = "(#{sim_major}.#{sim_minor})"
 
-iphone6 = RunLoop::Device.device_with_identifier("iPhone 6s #{sim_version}").udid
-iphone6_plus = RunLoop::Device.device_with_identifier("iPhone 6s Plus #{sim_version}").udid
+iphone7 = RunLoop::Device.device_with_identifier("iPhone 7 #{sim_version}").udid
+iphone6 = RunLoop::Device.device_with_identifier("iPhone 6s Plus #{sim_version}").udid
 iphone5 = RunLoop::Device.device_with_identifier("iPhone 5s #{sim_version}").udid
 
-iphone6_report = "reports/iphone6.json"
-iphone6_plus_report = "reports/iphone6-plus.json"
+iphone7_report = "reports/iphone7.json"
+iphone6_report = "reports/iphone6-plus.json"
 iphone5_report = "reports/iphone5.json"
 
 FileUtils.mkdir_p("./reports")
@@ -60,13 +60,13 @@ formatter: -f <%= formatter %> NO_STOP=<%= no_stop %>
 simulator_vars: APP=<%= APP %>
 simulator_tags: --tags ~@device_only --tags ~@device
 
-sim_six:              DEVICE_TARGET=<%= iphone6 %> -f json -o <%= iphone6_report %>
-sim_six_plus:         DEVICE_TARGET=<%= iphone6_plus %> -f json -o <%= iphone6_plus_report %>
-sim_five:             DEVICE_TARGET=<%= iphone5 %> -f json -o <%= iphone5_report %>
+sim_seven:  DEVICE_TARGET=<%= iphone7 %> -f json -o <%= iphone7_report %>
+sim_six:    DEVICE_TARGET=<%= iphone6 %> -f json -o <%= iphone6_report %>
+sim_five:   DEVICE_TARGET=<%= iphone5 %> -f json -o <%= iphone5_report %>
 
-default:              -p simulator_vars -p simulator_tags -p formatter -p sim_six
-simulator_six_plus:   -p simulator_vars -p simulator_tags -p formatter -p sim_six_plus
-simulator_five:       -p simulator_vars -p simulator_tags -p formatter -p sim_five
+default:        -p simulator_vars -p simulator_tags -p formatter -p sim_seven
+simulator_six:  -p simulator_vars -p simulator_tags -p formatter -p sim_six
+simulator_five: -p simulator_vars -p simulator_tags -p formatter -p sim_five
 
 # Launch on device.
 device_tags:  --tags ~@simulator_only --tags ~@simulator
