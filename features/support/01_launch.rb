@@ -24,8 +24,17 @@ Before do |scenario|
     # Add launch options here.
   }
 
+  if RunLoop::Environment.ci?
+    target = RunLoop::Environment.device_target
+    device = RunLoop::Device.device_with_identifier(target)
+    RunLoop::CoreSimulator.quit_simulator
+    sleep(10)
+    RunLoop::CoreSimulator.erase(device)
+    core_sim = RunLoop::CoreSimulator.new(device, nil)
+    core_sim.launch_simulator
+  end
+
   launcher.relaunch(options)
-  launcher.calabash_notify(self)
 end
 
 After do |scenario|
