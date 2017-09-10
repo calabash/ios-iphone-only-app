@@ -20,12 +20,19 @@ end
 
 Before do |scenario|
   launcher = Calabash::Launcher.launcher
+
+  if !RunLoop::Environment.xtc?
+    # Fingertips animations are causing touch failures on Test Cloud
+    args = ["FINGERTIPS"]
+  else
+    args = []
+  end
+
   options = {
-    # Add launch options here.
+    args: args
   }
 
   launcher.relaunch(options)
-  launcher.calabash_notify(self)
 end
 
 After do |scenario|
