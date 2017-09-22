@@ -134,6 +134,7 @@ ditto_or_exit "${INSTALLED_DSYM}" "${XTC_DIR}/${DSYM}"
 info "Copied ${DSYM} to ${XTC_DIR}/"
 
 rm -rf "${XTC_DIR}/.xtc"
+mkdir -p ".xtc"
 ditto_or_exit ".xtc" "${XTC_DIR}/.xtc"
 info "Copied .xtc to ${XTC_DIR}/.xtc"
 
