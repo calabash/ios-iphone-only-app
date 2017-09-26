@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 if [ -z "${TRAVIS}" ] && [ -z "${JENKINS_HOME}" ]; then
   echo "FAIL: only run this script on Travis or Jenkins"
   exit 1
