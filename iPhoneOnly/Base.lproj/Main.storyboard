@@ -1,10 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17A362a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -15,12 +24,12 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lQ9-pk-eEO" userLabel="Cayenne">
-                                <rect key="frame" x="20" y="20" width="44" height="44"/>
-                                <color key="backgroundColor" red="0.50196081399917603" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="16" y="20" width="44" height="44"/>
+                                <color key="backgroundColor" red="0.50196081399917603" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration" label="Cayenne">
                                     <accessibilityTraits key="traits" button="YES"/>
                                     <bool key="isElement" value="YES"/>
@@ -31,8 +40,8 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lXi-mh-1u9" userLabel="Asparagus">
-                                <rect key="frame" x="278" y="20" width="44" height="44"/>
-                                <color key="backgroundColor" red="0.50196081399917603" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="138" y="20" width="44" height="44"/>
+                                <color key="backgroundColor" red="0.50196081399917603" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration" label="Asparagus">
                                     <accessibilityTraits key="traits" button="YES"/>
                                     <bool key="isElement" value="YES"/>
@@ -43,8 +52,8 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UUW-fn-x9d" userLabel="Clover">
-                                <rect key="frame" x="536" y="20" width="44" height="44"/>
-                                <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="260" y="20" width="44" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.50196081399917603" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration" label="Clover">
                                     <accessibilityTraits key="traits" button="YES"/>
                                     <bool key="isElement" value="YES"/>
@@ -55,8 +64,8 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JQD-12-hcK" userLabel="Midnight">
-                                <rect key="frame" x="20" y="278" width="44" height="44"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="16" y="262" width="44" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration" label="Midnight">
                                     <accessibilityTraits key="traits" button="YES"/>
                                     <bool key="isElement" value="YES"/>
@@ -67,8 +76,8 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfh-zB-00p" userLabel="Plum">
-                                <rect key="frame" x="278" y="278" width="44" height="44"/>
-                                <color key="backgroundColor" red="0.50196081399917603" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="138" y="262" width="44" height="44"/>
+                                <color key="backgroundColor" red="0.50196081399917603" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration" label="Plum">
                                     <accessibilityTraits key="traits" button="YES"/>
                                     <bool key="isElement" value="YES"/>
@@ -79,8 +88,8 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RWw-71-T40" userLabel="Tin">
-                                <rect key="frame" x="536" y="278" width="44" height="44"/>
-                                <color key="backgroundColor" red="0.49803921580314636" green="0.49803921580314636" blue="0.49803921580314636" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="260" y="262" width="44" height="44"/>
+                                <color key="backgroundColor" red="0.49803921580314636" green="0.49803921580314636" blue="0.49803921580314636" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration" label="Tin">
                                     <accessibilityTraits key="traits" button="YES"/>
                                     <bool key="isElement" value="YES"/>
@@ -91,8 +100,8 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RUI-uJ-o0f" userLabel="Mocha">
-                                <rect key="frame" x="20" y="556" width="44" height="44"/>
-                                <color key="backgroundColor" red="0.50196081399917603" green="0.25098040699958801" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="16" y="524" width="44" height="44"/>
+                                <color key="backgroundColor" red="0.50196081399917603" green="0.25098040699958801" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration" label="Mocha">
                                     <accessibilityTraits key="traits" button="YES"/>
                                     <bool key="isElement" value="YES"/>
@@ -103,8 +112,8 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hD3-PD-wya" userLabel="Fern">
-                                <rect key="frame" x="278" y="556" width="44" height="44"/>
-                                <color key="backgroundColor" red="0.25098040699958801" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="138" y="524" width="44" height="44"/>
+                                <color key="backgroundColor" red="0.25098040699958801" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration" label="Fern">
                                     <accessibilityTraits key="traits" button="YES"/>
                                     <bool key="isElement" value="YES"/>
@@ -115,8 +124,8 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dqe-d7-B1k" userLabel="Moss">
-                                <rect key="frame" x="536" y="556" width="44" height="44"/>
-                                <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.25098040699958801" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="260" y="524" width="44" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.25098040699958801" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration" label="Moss">
                                     <accessibilityTraits key="traits" button="YES"/>
                                     <bool key="isElement" value="YES"/>
@@ -127,164 +136,140 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xr-sB-HJd">
-                                <rect key="frame" x="175" y="233" width="250" height="25"/>
+                                <rect key="frame" x="35" y="217" width="250" height="25"/>
                                 <accessibility key="accessibilityConfiguration" label="Action"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="If3-WX-WeV"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="action"/>
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BbF-p0-YF9" userLabel="top left">
-                                <rect key="frame" x="30" y="74" width="2" height="2"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <accessibility key="accessibilityConfiguration" label="top left"/>
+                                <rect key="frame" x="26" y="74" width="4" height="4"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="top left" label="top left"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="2" id="FIO-R4-kmG"/>
-                                    <constraint firstAttribute="width" constant="2" id="jlA-lP-P9q"/>
+                                    <constraint firstAttribute="height" constant="4" id="FIO-R4-kmG"/>
+                                    <constraint firstAttribute="width" constant="4" id="jlA-lP-P9q"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="2"/>
-                                <color key="tintColor" red="0.098039217293262482" green="0.098039217293262482" blue="0.098039217293262482" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.098039217293262482" green="0.098039217293262482" blue="0.098039217293262482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="top left"/>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="smallButtonTouched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yRm-HS-pt2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjW-4C-fTU" userLabel="top middle">
-                                <rect key="frame" x="299" y="74" width="2" height="2"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <accessibility key="accessibilityConfiguration" label="top middle"/>
+                                <rect key="frame" x="158" y="74" width="4" height="4"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="top middle" label="top middle"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="2" id="6nX-c0-h63"/>
-                                    <constraint firstAttribute="width" constant="2" id="TzH-mW-j0Y"/>
+                                    <constraint firstAttribute="height" constant="4" id="6nX-c0-h63"/>
+                                    <constraint firstAttribute="width" constant="4" id="TzH-mW-j0Y"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="2"/>
-                                <color key="tintColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="top middle"/>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="smallButtonTouched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="TG8-eO-1je"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PmT-gk-Jrq" userLabel="middle left">
-                                <rect key="frame" x="74" y="299" width="2" height="2"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <accessibility key="accessibilityConfiguration" label="middle left"/>
+                                <rect key="frame" x="70" y="282" width="4" height="4"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="middle left" label="middle left"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="2" id="Pav-KU-eWu"/>
-                                    <constraint firstAttribute="width" constant="2" id="sBa-Hl-z4l"/>
+                                    <constraint firstAttribute="height" constant="4" id="Pav-KU-eWu"/>
+                                    <constraint firstAttribute="width" constant="4" id="sBa-Hl-z4l"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="2"/>
-                                <color key="tintColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="middle left"/>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="smallButtonTouched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vTe-r8-llB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNf-W8-pa1" userLabel="bottom left">
-                                <rect key="frame" x="30" y="544" width="2" height="2"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <accessibility key="accessibilityConfiguration" label="bottom left"/>
+                                <rect key="frame" x="26" y="510" width="4" height="4"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="bottom left" label="bottom left"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="2" id="bfa-8w-o0h"/>
-                                    <constraint firstAttribute="height" constant="2" id="rpn-4H-1zn"/>
+                                    <constraint firstAttribute="width" constant="4" id="bfa-8w-o0h"/>
+                                    <constraint firstAttribute="height" constant="4" id="rpn-4H-1zn"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="2"/>
-                                <color key="tintColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="bottom left"/>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="smallButtonTouched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6nZ-7q-MuQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMw-em-EEK" userLabel="bottom middle">
-                                <rect key="frame" x="299" y="544" width="2" height="2"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <accessibility key="accessibilityConfiguration" label="bottom middle"/>
+                                <rect key="frame" x="158" y="510" width="4" height="4"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="bottom middle" label="bottom middle"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="2" id="DXO-TZ-MUt"/>
-                                    <constraint firstAttribute="width" constant="2" id="NBa-UZ-hca"/>
+                                    <constraint firstAttribute="height" constant="4" id="DXO-TZ-MUt"/>
+                                    <constraint firstAttribute="width" constant="4" id="NBa-UZ-hca"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="2"/>
-                                <color key="tintColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="bottom middle"/>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="smallButtonTouched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="U5G-k9-jWI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Y3-X5-xrk" userLabel="middle right">
-                                <rect key="frame" x="524" y="299" width="2" height="2"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <accessibility key="accessibilityConfiguration" label="middle right"/>
+                                <rect key="frame" x="246" y="282" width="4" height="4"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="middle right" label="middle right"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="2" id="38b-Po-151"/>
-                                    <constraint firstAttribute="height" constant="2" id="b1T-Ot-cUe"/>
+                                    <constraint firstAttribute="width" constant="4" id="38b-Po-151"/>
+                                    <constraint firstAttribute="height" constant="4" id="b1T-Ot-cUe"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="2"/>
-                                <color key="tintColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="middle right"/>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="smallButtonTouched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="mA1-Eh-cEh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8v-61-tPh" userLabel="top right">
-                                <rect key="frame" x="568" y="74" width="2" height="2"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <accessibility key="accessibilityConfiguration" label="top right"/>
+                                <rect key="frame" x="290" y="74" width="4" height="4"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="top right" label="top right"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="2" id="wHN-CU-GuD"/>
-                                    <constraint firstAttribute="width" constant="2" id="wTR-z1-cV8"/>
+                                    <constraint firstAttribute="height" constant="4" id="wHN-CU-GuD"/>
+                                    <constraint firstAttribute="width" constant="4" id="wTR-z1-cV8"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="2"/>
-                                <color key="tintColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="top right"/>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="smallButtonTouched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0pk-NR-WqO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fd1-jy-W1h" userLabel="bottom right">
-                                <rect key="frame" x="571" y="544" width="2" height="2"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <accessibility key="accessibilityConfiguration" label="bottom right"/>
+                                <rect key="frame" x="293" y="510" width="4" height="4"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="bottom right" label="bottom right"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="2" id="BCH-6e-S0W"/>
-                                    <constraint firstAttribute="height" constant="2" id="gGb-n6-4kD"/>
+                                    <constraint firstAttribute="width" constant="4" id="BCH-6e-S0W"/>
+                                    <constraint firstAttribute="height" constant="4" id="gGb-n6-4kD"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="2"/>
-                                <color key="tintColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="bottom right"/>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="smallButtonTouched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="X7m-uL-qQN"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="hD3-PD-wya" secondAttribute="centerX" id="1cy-gt-8zx"/>
                             <constraint firstItem="UUW-fn-x9d" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="2gD-23-w74"/>
