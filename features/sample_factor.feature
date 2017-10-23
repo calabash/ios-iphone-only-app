@@ -30,8 +30,9 @@ Display & Brightness > Display Zoom > Standard | Zoomed > Set
 
 On iOS Simulators, there is no Zoomed or Standard mode.
 
-Scenario: Touch the small buttons
+Scenario Outline: Touch the small buttons
 Given the app has launched
+And I rotate the device so the home button is on the <position>
 When I touch the top left button, the action text is correct
 When I touch the top middle button, the action text is correct
 When I touch the top right button, the action text is correct
@@ -41,3 +42,8 @@ When I touch the bottom left button, the action text is correct
 When I touch the bottom middle button, the action text is correct
 When I touch the bottom right button, the action text is correct
 
+Examples:
+| position |
+| bottom   |
+| right    |
+| left     |
