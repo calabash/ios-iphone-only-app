@@ -36,16 +36,13 @@ Before do |scenario|
 end
 
 After do |scenario|
-  # Calabash can shutdown the app cleanly by calling the app life cycle methods
-  # in the UIApplicationDelegate.  This is really nice for CI environments, but
-  # not so good for local development.
-  #
-  # See the documentation for NO_STOP for a nice debugging workflow
-  #
-  # http://calabashapi.xamarin.com/ios/file.ENVIRONMENT_VARIABLES.html#label-NO_STOP
-  # http://calabashapi.xamarin.com/ios/Calabash/Cucumber/Core.html#console_attach-instance_method
-  unless launcher.calabash_no_stop?
-    calabash_exit
+  if scenario.failed?
+    if RunLoop::Environment.xtc?
+      ENV["RESET_BETWEEN_SCENARIOS"] = "1"
+      calabash_exit
+    else
+      binding.pry
+    end
   end
 end
 
