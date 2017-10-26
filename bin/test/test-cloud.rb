@@ -11,9 +11,8 @@ if !device_set || device_set == ""
 end
 
 if !device_set || device_set == ""
-  device_set = ["81d44686", "92f264c5", "96e6018d", "ef1132ed", "16b73c20"].sample
+  device_set = ["d1cd4b31", "9074a73c", "844fc494", "93d994db"].sample
 end
-
 
 Bundler.with_clean_env do
   Luffa.unix_command("bundle update")
