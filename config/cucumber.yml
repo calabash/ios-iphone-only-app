@@ -59,6 +59,7 @@ formatter: -f <%= formatter %> NO_STOP=<%= no_stop %>
 # Launch on default simulator.
 simulator_vars: APP=<%= APP %>
 simulator_tags: --tags ~@device_only --tags ~@device
+simulator: -p simulator_vars -p simulator_tags
 
 sim_six:              DEVICE_TARGET=<%= iphone6 %> -f json -o <%= iphone6_report %>
 sim_six_plus:         DEVICE_TARGET=<%= iphone6_plus %> -f json -o <%= iphone6_plus_report %>

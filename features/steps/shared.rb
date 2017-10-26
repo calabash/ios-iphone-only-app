@@ -59,3 +59,10 @@ When(/^I touch the (top|middle|bottom) (left|middle|right) button, the action te
   wait_for_text_in_action_label("#{y_id} #{x_id}")
 end
 
+And(/^I rotate the device so the home button is on the (top|bottom|left|right)$/) do |position|
+  wait_for_none_animating
+  sleep(1.0)
+  rotate_home_button_to(position.to_s)
+  sleep(1.0)
+  wait_for_none_animating
+end
