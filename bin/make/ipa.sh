@@ -112,7 +112,6 @@ banner "Code Signing Details"
 DETAILS=`xcrun codesign --display --verbose=2 ${INSTALLED_APP} 2>&1`
 
 echo "$(tput setaf 4)$DETAILS$(tput sgr0)"
-
 banner "Preparing for XTC Submit"
 
 XTC_DIR="xtc-submit"
@@ -148,5 +147,7 @@ cat "config/xtc-other-gems.rb" >> "${XTC_DIR}/Gemfile"
 info "Wrote ${XTC_DIR}/Gemfile with contents"
 cat "${XTC_DIR}/Gemfile"
 
-info "Done!"
+rm -f "${XTC_DIR}/Gemfile.lock"
+info "Deleted ${XTC_DIR}/Gemfile.lock"
 
+info "Done!"
