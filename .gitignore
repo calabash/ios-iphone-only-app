@@ -34,8 +34,9 @@ screenshots
 .ruby-version
 Gemfile.lock
 
-# briar
+# private
 .env
+.xtc-credentials
 
 # Jenkins CI
 ci-reports
